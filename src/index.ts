@@ -70,7 +70,7 @@ export default class ElectronGoogleOAuth2 extends EventEmitter {
     this.oauth2Client = new google.auth.OAuth2(
       clientId,
       clientSecret,
-      `http://127.0.0.1:${this.options.loopbackInterfaceRedirectionPort}/callback`
+      `http://127.0.0.1:${this.options.loopbackInterfaceRedirectionPort}/callback`,
     );
     this.oauth2Client.on('tokens', (tokens) => {
       this.emit('tokens', tokens);
