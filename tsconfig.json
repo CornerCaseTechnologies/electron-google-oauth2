@@ -22,6 +22,6 @@
     ]
   },
   "include": [
-    "dist/index.ts"
+    "src/index.ts"
   ]
 }

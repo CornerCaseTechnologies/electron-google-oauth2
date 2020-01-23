@@ -4,15 +4,16 @@
   "description": "A Google OAuth2 module for your Electron app.",
   "license": "MIT",
   "repository": "CornerCaseTechnologies/electron-google-oauth2",
-  "main": "./dist/index",
-  "types": "./dist/index",
+  "main": "./lib/index",
+  "types": "./lib/index",
   "author": {
     "name": "Joël Charles",
     "email": "joel@getstation.com"
   },
   "scripts": {
     "build": "tsc -p .",
-    "prepublishOnly": "yarn run build"
+    "prepublishOnly": "yarn run build",
+    "preinstall": "npm run build"
   },
   "keywords": [
     "electron",
