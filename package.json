@@ -13,7 +13,6 @@
   "scripts": {
     "build": "tsc -p .",
     "prepublishOnly": "yarn run build",
-    "preinstall": "npm run build"
   },
   "keywords": [
     "electron",
